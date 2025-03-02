@@ -43,7 +43,7 @@ function Home() {
         </Link> */}
           </div>
           <img
-            src="/lucky-draw-files/screens/home_screen_1.jpg"
+            src="/lucky-draw-files/Screens/home_screen_1.jpg"
             className="banner-image"
             alt=""
           />
@@ -53,7 +53,7 @@ function Home() {
         <div className="card-container">
           <img
             className="home-down-image"
-            src="/lucky-draw-files/screens/home_screen_2.jpg"
+            src="/lucky-draw-files/Screens/home_screen_2.jpg"
             alt=""
           />
 
@@ -61,7 +61,7 @@ function Home() {
             <div className="card">
               <div className="card-image-container">
                 <img
-                  src="/lucky-draw-files/screens/1_gm_coin_card.jpg"
+                  src="/lucky-draw-files/Screens/1_gm_coin_card.jpg"
                   className="card-image"
                   alt=""
                 />
@@ -75,7 +75,7 @@ function Home() {
             <div className="card">
               <div className="card-image-container">
                 <img
-                  src="/lucky-draw-files/screens/2_gm_coin_card.jpg"
+                  src="/lucky-draw-files/Screens/2_gm_coin_card.jpg"
                   className="card-image"
                   alt=""
                 />
@@ -87,7 +87,7 @@ function Home() {
             <div className="card">
               <div className="card-image-container">
                 <img
-                  src="/lucky-draw-files/screens/3_gm_coin_card.jpg"
+                  src="/lucky-draw-files/Screens/3_gm_coin_card.jpg"
                   className="card-image"
                   alt=""
                 />

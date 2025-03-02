@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Spinner from "./Spinner";
@@ -22,18 +20,16 @@ function FirstPrize() {
 
   const [showModal, setShowModal] = useState(false);
 
-
-  const closeModal = ()=>{
-          setIsCardVisible(true);
-          setShowModal(false)
-
-  }
+  const closeModal = () => {
+    setIsCardVisible(true);
+    setShowModal(false);
+  };
 
   const toggleModal = () => {
     setShowModal(!showModal);
     // setAnnounceWinner(!announceWinner);
-    if(showModal===true){
-      setIsCardVisible(false)
+    if (showModal === true) {
+      setIsCardVisible(false);
     }
   };
 
@@ -76,18 +72,18 @@ function FirstPrize() {
   return (
     <div className="grandpage">
       <div className="nav-buttons-container">
-         <Link to="/">
-                     <button
-                       className="home-button medium-home-button"
-                       style={{ color: "rgb(44, 44, 44)" }}
-                     >
-                       Home
-                     </button>
-                   </Link>
+        <Link to="/">
+          <button
+            className="home-button medium-home-button"
+            style={{ color: "rgb(44, 44, 44)" }}
+          >
+            Home
+          </button>
+        </Link>
       </div>
       <div className="grandPrize">
         <img
-          src="/lucky-draw-files/screens/1_gm_gold_screen_1.jpg"
+          src="/lucky-draw-files/Screens/1_gm_gold_screen_1.jpg"
           className="grandprize-image"
           alt=""
         />
@@ -95,7 +91,7 @@ function FirstPrize() {
       <div className="grandprize-down-portion">
         <img
           className="grand-down-image"
-          src="/lucky-draw-files/screens/1_gm_gold_screen_2.jpg"
+          src="/lucky-draw-files/Screens/1_gm_gold_screen_2.jpg"
           alt=""
         />
         <div className="items-container">
@@ -109,7 +105,7 @@ function FirstPrize() {
               <div className="card" onClick={handleCardClick}>
                 <div className="card-image-container">
                   <img
-                    src="/lucky-draw-files/screens/1_gm_coin_card.jpg"
+                    src="/lucky-draw-files/Screens/1_gm_coin_card.jpg"
                     className="card-image"
                     alt=""
                   />
@@ -155,7 +151,6 @@ function FirstPrize() {
             )
 
         } */}
-          
         </div>
       </div>
       {showWinners && (
@@ -167,7 +162,6 @@ function FirstPrize() {
           revealPrize={revealPrize}
           setRevealPrize={setRevealPrize}
           closeModal={closeModal}
-
         />
       )}
     </div>

@@ -47,7 +47,6 @@ function SecondPrize() {
     { url: "/lucky-draw-files/2_gm_gold_prize_winners/6.jpg", title: "beach" },
     { url: "/lucky-draw-files/2_gm_gold_prize_winners/7.jpg", title: "beach" },
     { url: "/lucky-draw-files/2_gm_gold_prize_winners/8.jpg", title: "beach" },
-   
   ];
 
   const handleAnnounceImage = () => {
@@ -72,7 +71,7 @@ function SecondPrize() {
       </div>
       <div className="grandPrize">
         <img
-          src="/lucky-draw-files/screens/2_gm_gold_screen_1.jpg"
+          src="/lucky-draw-files/Screens/2_gm_gold_screen_1.jpg"
           className="grandprize-image"
           alt=""
         />
@@ -80,7 +79,7 @@ function SecondPrize() {
       <div className="grandprize-down-portion">
         <img
           className="grand-down-image"
-          src="/lucky-draw-files/screens/2_gm_gold_screen_2.jpg"
+          src="/lucky-draw-files/Screens/2_gm_gold_screen_2.jpg"
           alt=""
         />
         <div className="items-container">
@@ -94,7 +93,7 @@ function SecondPrize() {
               <div className="card" onClick={handleCardClick}>
                 <div className="card-image-container">
                   <img
-                    src="/lucky-draw-files/screens/2_gm_coin_card.jpg"
+                    src="/lucky-draw-files/Screens/2_gm_coin_card.jpg"
                     className="card-image"
                     alt=""
                   />

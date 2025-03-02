@@ -41,7 +41,6 @@ function ThirdPrize() {
   const winnersList = [
     { url: "/lucky-draw-files/3_gm_gold_prize_winners/1.jpg", title: "beach" },
     { url: "/lucky-draw-files/3_gm_gold_prize_winners/2.jpg", title: "beach" },
-   
   ];
 
   const handleAnnounceImage = () => {
@@ -66,7 +65,7 @@ function ThirdPrize() {
       </div>
       <div className="grandPrize">
         <img
-          src="/lucky-draw-files/screens/3_gm_gold_screen_1.jpg"
+          src="/lucky-draw-files/Screens/3_gm_gold_screen_1.jpg"
           className="grandprize-image"
           alt=""
         />
@@ -74,7 +73,7 @@ function ThirdPrize() {
       <div className="grandprize-down-portion">
         <img
           className="grand-down-image"
-          src="/lucky-draw-files/screens/3_gm_gold_screen_2.jpg"
+          src="/lucky-draw-files/Screens/3_gm_gold_screen_2.jpg"
           alt=""
         />
         <div className="items-container">
@@ -88,7 +87,7 @@ function ThirdPrize() {
               <div className="card" onClick={handleCardClick}>
                 <div className="card-image-container">
                   <img
-                    src="/lucky-draw-files/screens/3_gm_coin_card.jpg"
+                    src="/lucky-draw-files/Screens/3_gm_coin_card.jpg"
                     className="card-image"
                     alt=""
                   />
