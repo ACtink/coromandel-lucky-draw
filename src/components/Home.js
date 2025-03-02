@@ -29,21 +29,21 @@ function Home() {
       <div className="outer">
         <div className="home">
           <div className="nav-buttons-container">
-            <Link to={"/"}>
-                              <motion.button
-                                whileHover={{ scale: "1.2", color: "yellow" }}
-                                whileTap={{ scale: "0.9" }}
-                                className="home-button medium-home-button"
-                              >
-                                Home
-                              </motion.button>
-                               </Link>
+            <Link to="/">
+              <button
+                className="home-button medium-home-button"
+                style={{ color: "rgb(44, 44, 44)" }}
+              >
+                Home
+              </button>
+            </Link>
+
             {/* <Link to={"/"} >
         <button className="home-button medium-home-button" >Reset</button>
         </Link> */}
           </div>
           <img
-            src="/requirements/final-files/new-home-up.gif"
+            src="/lucky-draw-files/screens/home_screen_1.jpg"
             className="banner-image"
             alt=""
           />
@@ -53,7 +53,7 @@ function Home() {
         <div className="card-container">
           <img
             className="home-down-image"
-            src="/requirements/final-files/new-home-down.gif"
+            src="/lucky-draw-files/screens/home_screen_2.jpg"
             alt=""
           />
 
@@ -61,7 +61,7 @@ function Home() {
             <div className="card">
               <div className="card-image-container">
                 <img
-                  src="/requirements/final-files/2-gram-coin-card.gif"
+                  src="/lucky-draw-files/screens/1_gm_coin_card.jpg"
                   className="card-image"
                   alt=""
                 />
@@ -75,24 +75,26 @@ function Home() {
             <div className="card">
               <div className="card-image-container">
                 <img
-                  src="/requirements/final-files/1-gram-coin-card.gif"
+                  src="/lucky-draw-files/screens/2_gm_coin_card.jpg"
                   className="card-image"
                   alt=""
                 />
               </div>
-
-              {/* <Link to="/2ndPrize" className="button-link"><button class="button">
-            <span>2nd Prize</span>
-          </button></Link> */}
             </div>
           </Link>
 
-          {/* <div className="inner-container"> */}
-
-          {/* </div> */}
+          <Link to="/thirdprize" className="button-link">
+            <div className="card">
+              <div className="card-image-container">
+                <img
+                  src="/lucky-draw-files/screens/3_gm_coin_card.jpg"
+                  className="card-image"
+                  alt=""
+                />
+              </div>
+            </div>
+          </Link>
         </div>
-
-        {/* </div> */}
       </div>
     </>
   );

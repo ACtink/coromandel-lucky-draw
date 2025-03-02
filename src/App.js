@@ -7,6 +7,7 @@ import SecondPrize from "./components/SecondPrize";
 import CarouselC from "./components/CarouselC";
 import { useState } from 'react';
 import { ShowNewGrandPageContext } from "./components/GrandPageContext";
+import ThirdPrize from "./components/ThirdPrize";
 
 
 function App() {
@@ -28,10 +29,8 @@ function App() {
 
           <Route path="/firstprize" element={<FirstPrize/>}/>
           <Route path="/secondprize" element={<SecondPrize/>}/>
-          {/* <Route path="/thirdprize" element={<ThirdPrize/>}/>
-          <Route path="/fourthprize" element={<FourthPrize/>}/>
-          <Route path="/fifthprize" element={<FifthPrize/>}/> */}
-          <Route  path="cara" element={<CarouselC/>} />
+          <Route path="/thirdprize" element={<ThirdPrize/>}/>
+         
           <Route path="/*" element={<YetToImplement/>}/>
 
         </Route>

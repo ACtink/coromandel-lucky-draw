@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Spinner from "./Spinner";
@@ -20,49 +22,72 @@ function FirstPrize() {
 
   const [showModal, setShowModal] = useState(false);
 
+
+  const closeModal = ()=>{
+          setIsCardVisible(true);
+          setShowModal(false)
+
+  }
+
   const toggleModal = () => {
     setShowModal(!showModal);
-    setAnnounceWinner(!announceWinner);
-    setIsCardVisible(!isCardVisible)
+    // setAnnounceWinner(!announceWinner);
+    if(showModal===true){
+      setIsCardVisible(false)
+    }
   };
 
   const handleCardClick = () => {
     setIsCardVisible(false);
-    setShowModal(!showModal);
-     setShowWinners(true);
-     setIsShowing(true);
+    setIsSpinnerVisible(true);
   };
 
   const winnersList = [
-    { url: "/requirements/final-files/2-gram-gold/1.jpg", title: "beach" },
-    { url: "/requirements/final-files/2-gram-gold/2.jpg", title: "beach" },
-    { url: "/requirements/final-files/2-gram-gold/3.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/1.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/2.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/3.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/4.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/5.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/6.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/7.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/8.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/9.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/10.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/11.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/12.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/13.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/14.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/15.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/16.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/17.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/18.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/19.jpg", title: "beach" },
+    { url: "/lucky-draw-files/1_gm_gold_prize_winners/20.jpg", title: "beach" },
   ];
 
-  // const handleAnnounceImage = () => {
-  //   setShowWinners(true);
-  //   setIsShowing(true);
-  //   setAnnounceWinner(false);
+  const handleAnnounceImage = () => {
+    setShowWinners(true);
+    setIsShowing(true);
+    // setAnnounceWinner(false);
 
-  //   setShowModal(!showModal);
-  // };
+    setShowModal(!showModal);
+  };
 
   return (
     <div className="grandpage">
       <div className="nav-buttons-container">
-        <Link to={"/"}>
-          <motion.button
-            whileHover={{ scale: "1.2", color: "yellow" }}
-            whileTap={{ scale: "0.9" }}
-            className="home-button medium-home-button"
-          >
-            Home
-          </motion.button>
-        </Link>
+         <Link to="/">
+                     <button
+                       className="home-button medium-home-button"
+                       style={{ color: "rgb(44, 44, 44)" }}
+                     >
+                       Home
+                     </button>
+                   </Link>
       </div>
       <div className="grandPrize">
         <img
-          src="/requirements/final-files/2-gram-coin-up.gif"
+          src="/lucky-draw-files/screens/1_gm_gold_screen_1.jpg"
           className="grandprize-image"
           alt=""
         />
@@ -70,21 +95,21 @@ function FirstPrize() {
       <div className="grandprize-down-portion">
         <img
           className="grand-down-image"
-          src="/requirements/final-files/2-gram-coin-down.gif"
+          src="/lucky-draw-files/screens/1_gm_gold_screen_2.jpg"
           alt=""
         />
         <div className="items-container">
           {isCardVisible && (
             <motion.div
-              initial={{ y: "-70vh" }}
+              initial={{ y: "-100vh" }}
               animate={{ y: "0" }}
-              transition={{ delay: "0.2" }}
+              transition={{ delay: "0.3" }}
               className="grand-page-card-container"
             >
               <div className="card" onClick={handleCardClick}>
                 <div className="card-image-container">
                   <img
-                    src="/requirements/final-files/2-gram-coin-card.gif"
+                    src="/lucky-draw-files/screens/1_gm_coin_card.jpg"
                     className="card-image"
                     alt=""
                   />
@@ -92,7 +117,7 @@ function FirstPrize() {
               </div>
             </motion.div>
           )}
-          {/* {isSpinnerVisible && (
+          {isSpinnerVisible && (
             <Spinner
               isSpinnerVisible={isSpinnerVisible}
               setIsSpinnerVisible={setIsSpinnerVisible}
@@ -100,8 +125,12 @@ function FirstPrize() {
               setAnnounceWinner={setAnnounceWinner}
               setRevealPrize={setRevealPrize}
               setIsShowing={setIsShowing}
+              setShowWinners={setShowWinners}
+              setShowModal={setShowModal}
+              showModal={showModal}
+              toggleModal={toggleModal}
             />
-          )} */}
+          )}
           {/* {announceWinner && (
             <motion.div
               // initial={{rotate:"180"}}
@@ -139,6 +168,8 @@ function FirstPrize() {
           winnersList={winnersList}
           revealPrize={revealPrize}
           setRevealPrize={setRevealPrize}
+          closeModal={closeModal}
+
         />
       )}
     </div>

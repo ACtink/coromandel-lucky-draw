@@ -5,7 +5,7 @@ import SliderContainer from "./SliderContainer";
 import Modal from "./Modal";
 import { motion } from "framer-motion";
 
-function SecondPrize() {
+function ThirdPrize() {
   const [isCardVisible, setIsCardVisible] = useState(true);
   const [isSpinnerVisible, setIsSpinnerVisible] = useState(false);
 
@@ -39,14 +39,8 @@ function SecondPrize() {
   };
 
   const winnersList = [
-    { url: "/lucky-draw-files/2_gm_gold_prize_winners/1.jpg", title: "beach" },
-    { url: "/lucky-draw-files/2_gm_gold_prize_winners/2.jpg", title: "beach" },
-    { url: "/lucky-draw-files/2_gm_gold_prize_winners/3.jpg", title: "beach" },
-    { url: "/lucky-draw-files/2_gm_gold_prize_winners/4.jpg", title: "beach" },
-    { url: "/lucky-draw-files/1_gm_gold_prize_winners/5.jpg", title: "beach" },
-    { url: "/lucky-draw-files/2_gm_gold_prize_winners/6.jpg", title: "beach" },
-    { url: "/lucky-draw-files/2_gm_gold_prize_winners/7.jpg", title: "beach" },
-    { url: "/lucky-draw-files/2_gm_gold_prize_winners/8.jpg", title: "beach" },
+    { url: "/lucky-draw-files/3_gm_gold_prize_winners/1.jpg", title: "beach" },
+    { url: "/lucky-draw-files/3_gm_gold_prize_winners/2.jpg", title: "beach" },
    
   ];
 
@@ -72,7 +66,7 @@ function SecondPrize() {
       </div>
       <div className="grandPrize">
         <img
-          src="/lucky-draw-files/screens/2_gm_gold_screen_1.jpg"
+          src="/lucky-draw-files/screens/3_gm_gold_screen_1.jpg"
           className="grandprize-image"
           alt=""
         />
@@ -80,7 +74,7 @@ function SecondPrize() {
       <div className="grandprize-down-portion">
         <img
           className="grand-down-image"
-          src="/lucky-draw-files/screens/2_gm_gold_screen_2.jpg"
+          src="/lucky-draw-files/screens/3_gm_gold_screen_2.jpg"
           alt=""
         />
         <div className="items-container">
@@ -94,7 +88,7 @@ function SecondPrize() {
               <div className="card" onClick={handleCardClick}>
                 <div className="card-image-container">
                   <img
-                    src="/lucky-draw-files/screens/2_gm_coin_card.jpg"
+                    src="/lucky-draw-files/screens/3_gm_coin_card.jpg"
                     className="card-image"
                     alt=""
                   />
@@ -160,4 +154,4 @@ function SecondPrize() {
   );
 }
 
-export default SecondPrize;
+export default ThirdPrize;

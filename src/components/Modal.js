@@ -3,7 +3,7 @@ import SliderContainer from "./SliderContainer";
 import { AnimatePresence, motion } from "framer-motion";
 
 
-function Modal({ showModal, setShowModal, toggleModal, winnersList }) {
+function Modal({ showModal, setShowModal, toggleModal, winnersList, closeModal }) {
 
 
  
@@ -30,7 +30,7 @@ function Modal({ showModal, setShowModal, toggleModal, winnersList }) {
             // whileTap={{scale:"0.8"}}
         
             
-            className="modal-close-button" onClick={toggleModal}>
+            className="modal-close-button" onClick={closeModal}>
               Close
             </motion.button>
           </div>
