@@ -155,9 +155,7 @@ function FirstPrize() {
             )
 
         } */}
-          {/* {
-            showWinners && (<SliderContainer winnersList={winnersList} />)
-        } */}
+          
         </div>
       </div>
       {showWinners && (
